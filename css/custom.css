@@ -1,0 +1,16 @@
+ul.technologies,
+ul.learning {
+  padding-left: 0px;
+}
+
+ul.technologies > li,
+ul.learning > li {
+  list-style: none;
+  border-top: grey 1px solid;
+  padding: 8px 0px;
+}
+
+ul.technologies > li:last-child,
+ul.learning > ul:last-child {
+  border-bottom: grey 1px solid;
+}
