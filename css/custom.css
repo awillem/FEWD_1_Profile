@@ -14,3 +14,22 @@ ul.technologies > li:last-child,
 ul.learning > ul:last-child {
   border-bottom: grey 1px solid;
 }
+
+main.projects {
+  padding-top: 60px;
+}
+
+.projects > h1 {
+  font-size: 32px;
+  width: 100%
+}
+
+.projects img {
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .flex.projects {
+    flex-wrap: wrap;
+  }
+}

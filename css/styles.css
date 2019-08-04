@@ -22,8 +22,8 @@ a:hover {
 }
 
 /* Section Styles */
-
-.main-nav {
+/* Updated selector from .main-nav to nav  */
+nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -69,8 +69,8 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 8% 25%;
+  border: 5px solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -88,7 +88,8 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+/* changed .card selectors to section.card */
+section.card, figure {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -98,8 +99,16 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+section.card:hover {
+  border-color: #e422e4;
+}
+
+section.card> img {
+  display: block;
+  width: 65%;
+  margin: 5px auto 35px;
+  border-radius: 50%;
+  border: 5px black solid;
 }
 
 ul.skills {
@@ -177,6 +186,9 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+  .flex > .break {
+    width: 100%;
   }
 
   header {
