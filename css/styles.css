@@ -76,6 +76,20 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+main.projects {
+  padding-top: 60px;
+}
+
+.projects > h1 {
+  font-size: 32px;
+  width: 100%
+}
+
+.projects img {
+  width: 100%;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -114,6 +128,23 @@ section.card> img {
 ul.skills {
   padding: 0;
   text-align: center;
+}
+
+ul.technologies,
+ul.learning {
+  padding-left: 0px;
+}
+
+ul.technologies > li,
+ul.learning > li {
+  list-style: none;
+  border-top: grey 1px solid;
+  padding: 8px 0px;
+}
+
+ul.technologies > li:last-child,
+ul.learning > ul:last-child {
+  border-bottom: grey 1px solid;
 }
 
 .skills li {
@@ -189,6 +220,10 @@ a.social:hover {
   }
   .flex > .break {
     width: 100%;
+  }
+
+  .flex.projects {
+    flex-wrap: wrap;
   }
 
   header {
